@@ -9,7 +9,7 @@ text-align: center;
 }
 
 section{
-    background: white;
+    background: rgba(255, 255, 255, 0.288);
     border-radius: 10px;
     padding: 15px;
     width: 500px;
@@ -17,10 +17,17 @@ section{
     box-shadow: 3px 3px 10px rgb(0, 0, 0.363);
 }
 
+div{
+    text-align: center;
+}
+
 footer{
     color: white;
     text-align: center;
     font-style:italic;
-    margin-top: 15px;
+    margin-top: 250px;
     font-size: 0.8em;
+}
+#foto img{
+    height: 250px;
 }
