@@ -4,8 +4,9 @@ function carregar(){
     var data = new Date()
     var body = document.body
     var hora = data.getHours()
+    var minutos = data.getMinutes();
     
-    msg.innerHTML = `<strong>Agora são ${hora}:00 horas.</strong>`
+    msg.innerHTML = `<strong>Agora são ${hora}:${minutos} horas.</strong>`;
     if(hora >= 0 && hora < 12){
         // Bom Dia!
         img.innerHTML = '<img src="imagens/manhaED.png" alt="Manhã">'
@@ -22,4 +23,5 @@ function carregar(){
         body.style.backgroundImage = "url('imagens/ceuestrelado.jpg')"
         body.style.backgroundSize = "cover"
     }
+    setInterval(exibirHoraAtual, 1000);
 }
