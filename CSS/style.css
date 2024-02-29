@@ -30,4 +30,5 @@ footer{
 }
 #foto img{
     height: 250px;
+    background-repeat: no-repeat;
 }
